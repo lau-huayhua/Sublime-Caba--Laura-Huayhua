@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Sublime Caba</title>
+    <link rel="icon" href="../img/icon_sublime.ico">
+</head>
+
+<body>
+    <header>
+        <!--Inicio de nav-->
+        <div class="container-fluid  contenedor-header">
+
+            <nav class="navbar navbar-expand-lg navbar-light contenedor-header">
+                <a class="navbar-brand" href="../index.html" id="logo">Sublime Caba</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto nav-c">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./sesion.html" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>
+
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+    </header>
+
+    <!--fin de nav-->
+
+    <!--Cuerpo de la pagina-->
+    <main>
+
+        <div class="container-fluid d-flex flex-column align-items-center bg-body rounded py-5">
+            <form>
+                <div class="btn-group  d-flex justify-content-center align-items-center" role="group" aria-label="...">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn-outline-primary" for="btnradio1">Iniciar Sesión</label>
+
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <a href="./registro.html" class="btn-outline-primary">Registrarse</a>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <h4 class="py-3">Iniciar Sesión</h4>
+                    <label for="exampleFormControlInput1" class="form-label">Email:<span
+                            class="obligatorio">*</span></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Contraseña<span class="obligatorio">*</span></label>
+
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Ingrese su contraseña"
+                        required>
+                </div>
+                <a href="#"><span class="obligatorio">Se te olvidó la contraseña?</span></a>
+               
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Mantener sesión iniciada</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+    <!--fin Cuerpo de la pagina-->
+    <!--Pie de pagina-->
+    <footer>
+        <div class="row align-items-center footer">
+            <div class="col col-6 col-sm-4">
+                <p>
+                    <span id="logo">Sublime Caba </span><br>
+
+                    Sublimación y estampados<br />
+                    Personalizamos indumentaria, remeras, buzos, camperas, gorras,
+                    barbijos y vinilo decorativo.
+                    <br />
+                </p>
+                <a href="#">Preguntas Frecuentes</a>
+            </div>
+            <div class="col col-6 col-sm-4">
+                <p>REDES SOCIALES</p>
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/sublime.caba/" target="_blank">Instagram</a><br />
+                <i class="fa-brands fa-facebook"></i>
+                <a href="#">Facebook</a>
+            </div>
+            <div class="col col-6 col-sm-4">
+                <p>
+                    CONTACTANOS<br />
+                    <i class="fa-solid fa-envelope"></i> correosublime@gmail.com<br />
+                    <i class="fa-solid fa-square-phone"></i> 011-50505050 <br />
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- fin PIE de PAGINA-->
+    <!--JS Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/c70a6aa8bd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

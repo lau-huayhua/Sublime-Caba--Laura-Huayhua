@@ -1,0 +1,22 @@
+/*Inicio de Sesión*/
+#form {
+    a,
+    span {
+        text-decoration: none;
+        color: $color1;
+    }
+}
+
+.btn-outline-primary {
+    border: 2px solid white;
+    background: linear-gradient(90deg,
+            rgba(161, 8, 24, 1) 46%,
+            rgba(205, 61, 55, 1) 100%);
+    width: 100%;
+    border-radius: 50px;
+    color: $c_negro;
+    align-items: center;
+    text-aling:center;
+}
+
+/*Fin de Sesión*/

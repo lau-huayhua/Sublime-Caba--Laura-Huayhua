@@ -1,0 +1,42 @@
+/*Inicio Main*/
+main{
+    background-image: url(../img/fondo03.png);
+    overflow-x: hidden;
+}
+
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2% 0 0 0;
+  }
+  .c-card {
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    background: linear-gradient(90deg, rgba(161, 8, 24, 1) 46%, rgba(205, 61, 55, 1) 100%);
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  
+    &:hover {
+      transform: translateY(-3px);
+      -webkit-box-shadow: 12px -13px 5px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 12px -13px 5px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 12px -13px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .btn {
+    padding: 4px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: linear-gradient(90deg, rgba(161, 8, 24, 1) 46%, rgba(205, 61, 55, 1) 100%);
+    width: 100%;
+  
+    &:hover {
+      background-color: #a10818;
+    }
+}
+/*Fin Main*/

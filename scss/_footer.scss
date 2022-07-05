@@ -1,0 +1,22 @@
+/*Inicio footer*/
+.footer {
+    @include d_flex(space-around, center, wrap);
+    background-color: $color1;
+    padding: 2%;
+    color: $c_blanco;
+    width: 100%;
+    font-size: $m;
+
+    a {
+        text-decoration: none;
+        cursor:pointer;
+        &:hoover{
+            color:$c_negro;
+        }
+    }
+    #logo{
+        font-family: $f_logo;
+    }
+}
+
+/*Fin footer*/

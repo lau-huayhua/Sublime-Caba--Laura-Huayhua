@@ -1,0 +1,30 @@
+/*Inicio Banner*/
+.contenedor-banner {
+    height: 72vh;
+
+    /* Escritorio extra grande */
+    @media only screen and (min-width: 1200px) {
+        height: 70vh;
+    }
+
+    /* Escritorio grande */
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        height: 65vh;
+    }
+
+    /* Escritorio pequeño / tablet */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        height: 50vh;
+    }
+
+    /* Tablets */
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        height: 45vh;
+    }
+
+    /* Teléfonos */
+    @media only screen and (max-width: 575px) {
+        height: 35vh;
+    }
+}
+/*Fin Banner*/

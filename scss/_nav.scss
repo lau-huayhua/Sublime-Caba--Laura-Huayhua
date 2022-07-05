@@ -1,0 +1,41 @@
+/*PARA TODO*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+/*Inicio NAV*/
+.contenedor-header {
+    background-color: $color1;
+
+    #nav {
+        color: $c_blanco;
+        font-size: $m;
+    }
+
+    a {
+        text-decoration: none;
+        background-image: linear-gradient($c_negro, $c_negro);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .4s;
+
+        &:hover,
+        &:focus {
+            background-size: 100% 2px;
+            color: $c_negro;
+            cursor: pointer;
+        }
+    }
+
+    #logo {
+        font-family: $f_logo;
+        font-size: $l;
+        color: $c_blanco;
+    }
+}
+
+
+/*Fin NAV*/

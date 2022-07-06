@@ -5,6 +5,10 @@
     box-sizing: border-box;
   }
   
+body{
+    background-image: url(../img/fondo03.png);
+    overflow-x: hidden; 
+}
 /*Inicio NAV*/
 .contenedor-header {
     background-color: $color1;

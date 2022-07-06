@@ -1,21 +1,106 @@
-/*Inicio footer*/
-.footer {
-    @include d_flex(space-around, center, wrap);
-    background-color: $color1;
-    padding: 2%;
-    color: $c_blanco;
-    width: 100%;
+/*GRID*/
+.contenedor-footer {
+    display: grid;
+    height: 25vh;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "f1 f2 f3";
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     font-size: $m;
+    color: $c_blanco;
+    background-color: $color1;
 
-    a {
-        text-decoration: none;
-        cursor:pointer;
-        &:hoover{
-            color:$c_negro;
+    .fa-instagram, .fa-facebook{
+        color: $c_blanco;
+        font-size: $m;
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: $c_blanco;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $c_negro;
+                    }
+
+                    &:link {
+                        color: $c_blanco;
+                    }
+                }
+            }
         }
     }
-    #logo{
+
+    #logo {
         font-family: $f_logo;
+        font-size: $l;
+    }
+}
+
+.footer1 {
+    grid-area: f1;
+}
+
+.footer2 {
+    grid-area: f2;
+
+    ul {
+        list-style: none;
+        font-size: $s;
+
+        li {
+            a {
+                text-decoration: none;
+
+                &:hoover {
+                    color: $c_negro;
+                }
+            }
+        }
+    }
+}
+
+.footer3 {
+    grid-area: f3;
+}
+
+/*Mobile*/
+@media screen and (max-width: 576px) {
+    .contenedor-footer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "f1"
+            "f2"
+            "f3";
+        align-content: center;
+        height: auto;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #logo{
+        font-size: $m;
+    }
+    .fa-instagram, .fa-facebook{
+        color: $c_blanco;
+        font-size: $l;
+    }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contenedor-footer {
+        font-size: $s;
+        text-align: justify;
     }
 }
 

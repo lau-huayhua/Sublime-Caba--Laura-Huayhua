@@ -1,5 +1,4 @@
 /*Inicio Main*/
-
 h2 {
     text-align: center;
     text-transform: uppercase;
@@ -14,7 +13,7 @@ h2 {
     color: black;
     margin-top: 1%;
     margin-bottom: 1%;
-  
+
     &:hover {
       transform: translateY(-3px);
       -webkit-box-shadow: 12px -13px 5px 0px rgba(0, 0, 0, 0.1);
@@ -27,11 +26,87 @@ h2 {
     padding: 4px;
     font-size: 1rem;
     border: 2px solid white;
-    background: linear-gradient(90deg, rgba(161, 8, 24, 1) 46%, rgba(205, 61, 55, 1) 100%);
+    background: $color6;
     width: 100%;
   
     &:hover {
-      background-color: #a10818;
-    }
+      background-color:$color1;
+    } 
+    
 }
-/*Fin Main*/
+.contenedor-main{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+      "c1 c2 c3 c4"
+      "c5 c6 c7 c8";
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  justify-items: center;
+  gap: 2% 0;
+  padding: 2% 0;
+}
+.c1 {
+  grid-area: c1;
+}
+.c2{
+  grid-area: c2;
+}
+.c3{
+  grid-area: c3;
+}
+.c4{
+  grid-area: c4;
+}
+.c5{
+  grid-area: c5;
+}
+.c6{
+  grid-area: c6;
+}
+.c7{
+  grid-area: c7;
+}
+.c8{
+  grid-area: c8;
+}
+@media screen and (max-width: 1776px) {
+  .contenedor-main{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+          "c1 c2"
+          "c3 c4"
+          "c5 c6"
+          "c7 c8";
+          gap:0;
+          padding:0; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor-main{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+      grid-template-areas:
+          "c1"
+          "c2"
+          "c3"
+          "c4"
+          "c5" 
+          "c6"
+          "c7"
+          "c8";
+      align-content: center;
+      height: auto;
+      justify-items: center;
+      justify-content: center;
+      text-align: center;
+      gap:0;
+      padding:0;
+  }
+}

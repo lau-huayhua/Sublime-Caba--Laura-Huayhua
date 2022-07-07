@@ -182,65 +182,140 @@ h2 {
 /*fin de formulario*/
 /*Inicio de Nosotros*/
 .contenedor-nosotros {
-  box-sizing: border-box;
-  overflow-x: hidden;
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "caja1 caja2" "caja3 caja4" "caja5 caja5";
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 2%;
-  margin: 0 5%;
-  align-items: center; }
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "caja0 caja0" "caja1 caja2" "caja3 caja4" "caja5 caja5";
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; }
+
+.caja0 {
+  grid-area: caja0; }
+  .caja0 .slider {
+    width: 100vh;
+    height: 72vh;
+    /* Escritorio pequeño / tablet */
+    /* Tablets */
+    /* Teléfonos */ }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .caja0 .slider {
+        height: 50vh; } }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .caja0 .slider {
+        height: 45vh; } }
+    @media only screen and (max-width: 575px) {
+      .caja0 .slider {
+        height: 35vh; } }
 
 .caja1 {
-  grid-area: caja1; }
+  grid-area: caja1;
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .caja1 #logo {
+    font-family: "Courgette", cursive;
+    font-size: 2rem; }
 
 .caja2 {
-  grid-area: caja2; }
+  grid-area: caja2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .caja2 .img-n {
+    width: 70%;
+    height: 65%;
+    object-fit: fill; }
 
 .caja3 {
-  grid-area: caja3; }
+  grid-area: caja3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1% 0% 0% 5%; }
 
 .caja4 {
-  grid-area: caja4; }
+  grid-area: caja4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .caja4 .btn-s {
+    border: 2px solid #ffffff;
+    background: linear-gradient(90deg, #a10818 46%, #cd3d37 100%);
+    width: 20%;
+    border-radius: 50px; }
+  .caja4 .suscribite {
+    width: 70%; }
 
 .caja5 {
   grid-area: caja5;
-  margin-bottom: 2%; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .caja5 .contenedor-iframe {
+    height: 50%;
+    width: 70%; }
+  @media screen and (max-width: 576px) {
+    .caja5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      .caja5 .contenedor-iframe {
+        height: 40;
+        width: 90%; } }
 
-.img-n {
-  width: 100%;
-  height: 80%; }
+/*Mobile*/
+@media screen and (max-width: 576px) {
+  .contenedor-nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "caja0" "caja1" "caja2" "caja3" "caja4" "caja5";
+    align-content: center;
+    height: auto;
+    justify-items: center;
+    justify-content: center;
+    text-align: center; }
+  #logo {
+    font-size: 1.2rem; } }
 
-.contenedor-iframe {
-  height: 60%;
-  height: auto; }
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contenedor-nosotros {
+    font-size: 1.1rem;
+    text-align: justify; } }
 
-.btn-s {
-  border: 2px solid white;
-  background: linear-gradient(90deg, #a10818 46%, #cd3d37 100%);
-  width: 10%;
-  border-radius: 50px;
-  color: black; }
-
-.suscribite {
-  width: 60%; }
-
-/*Inicio de Sesión*/
+/*Inicio de Sesión-Registro*/
 #form a,
 #form span {
   text-decoration: none;
   color: #9b0b0c; }
 
-.btn-outline-primary {
-  border: 2px solid white;
-  background: linear-gradient(90deg, #a10818 46%, #cd3d37 100%);
+#form .btn-outline-primary1, #form .btn-outline-primary2 {
+  background-color: #097ce0;
+  color: #ffffff;
+  padding: 1% 2%;
   width: 100%;
-  border-radius: 50px;
-  color: #161515;
-  align-items: center;
-  text-aling: center; }
+  text-align: center;
+  border-radius: 10px 0px 0px 10px; }
+
+#form .btn-outline-primary2 {
+  border-radius: 0px 10px 10px 0px;
+  justify-content: center;
+  padding: 11px 0 0px 0; }
 
 /*Fin de Sesión*/

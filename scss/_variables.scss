@@ -1,28 +1,30 @@
 //Paleta de colores
-$color1:rgb(155,11,12);
-$color2: rgb(9,124,224) ;
-$c_negro:#161515 ;
-$c_blanco:#ffffff;
-$color3:#ffddc8;
-$color4:#c8eaff;
-$color5:#ff8979;
+$color1: rgb(155, 11, 12);
+$color2: rgb(9, 124, 224);
+$c_negro: #161515;
+$c_blanco: #ffffff;
+$color3: #ffddc8;
+$color4: #c8eaff;
+$color5: #ff8979;
+$color6: linear-gradient(90deg,
+		rgba(161, 8, 24, 1) 46%,
+		rgba(205, 61, 55, 1) 100%);
 
 /*Font Sizes*/
-$s:1.1rem;
-$m:1.2rem;
+$s: 1.1rem;
+$m: 1.2rem;
 $l: 2rem;
 
 /*Fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
 
-$f_logo:"Courgette", cursive;
-$f_body:"Roboto", sans-serif;
+$f_logo: "Courgette", cursive;
+$f_body: "Roboto", sans-serif;
 
-@mixin d_flex($direction,$justify, $align,$wrap){
-	display:$flex;
+@mixin d_flex($direction, $justify, $align, $wrap) {
+	display: flex;
 	flex-direction: $direction;
 	justify-content: $justify;
-	align-items:$align;
-    flex-wrap:$wrap;
+	align-items: $align;
+	flex-wrap: $wrap;
 }
-

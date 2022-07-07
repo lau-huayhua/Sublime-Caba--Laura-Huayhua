@@ -1,22 +1,26 @@
-/*Inicio de Sesión*/
+/*Inicio de Sesión-Registro*/
 #form {
     a,
     span {
         text-decoration: none;
         color: $color1;
     }
+    .btn-outline-primary1{
+        background-color: $color2;
+        color:$c_blanco;
+        padding: 1% 2%;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px 0px 0px 10px;  
+    }
+    .btn-outline-primary2{
+        @extend .btn-outline-primary1;
+        border-radius: 0px 10px 10px 0px;
+        justify-content:center;
+        padding: 11px 0 0px 0;
+    }
 }
 
-.btn-outline-primary {
-    border: 2px solid white;
-    background: linear-gradient(90deg,
-            rgba(161, 8, 24, 1) 46%,
-            rgba(205, 61, 55, 1) 100%);
-    width: 100%;
-    border-radius: 50px;
-    color: $c_negro;
-    align-items: center;
-    text-aling:center;
-}
+
 
 /*Fin de Sesión*/
